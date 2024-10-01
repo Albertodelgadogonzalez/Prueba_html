@@ -1,0 +1,28 @@
+Ejercicio3
+
+INICIO
+    //definomos y declaramos las constantes y variables    
+    VARIABLE: numero_inicio, total_numeros,contador = 0, resultado = 0
+    
+    //preguntamos en que numero empieza y cuantos quiere sumar
+    ESCRIBIR: "¿Desde que numero quieres"
+    LEER: numero_inicio
+    ESCRIBI: "¿Cuántos numeros quieres sumar?"
+    LEER: total_numeros
+    
+    
+        //se crea un bucle que vaya realizando la suma de los numeros
+        //hasta hacer sumando la cantidad de numeros indicada por el usuario
+
+        MIENTRAS (contador <= total_numeros) HACER 
+        resultado = resultado + (numero_inicio + contador)
+        contador = contador + 1
+        FIN MIENTRAS
+    //se muestra el resultado obtenido
+
+    ESCRIBIR: "El resultado de la suma es:" resultado
+
+
+
+
+FIN

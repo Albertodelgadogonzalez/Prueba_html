@@ -1,0 +1,26 @@
+
+Desarrolla un algoritmo con pseudocódigo que permita realizar la conversión
+de una determinada cantidad de dinero de euros(€) a rupias.
+Información adicional: 
+-1€ equivale a 87.34 rupias.
+-La cantidad de dinero que se debe convertir deberá facilitarla el usuario
+-La conversión sólo se podrá realizar si la cantidad es mayor a 0
+
+
+INICIO
+    
+    //definimos y creamos las variables y constantes
+     VARIABLES: cantidad_euros, cantidad_total, 1rupias, 1euro
+     CONSTANTE: 1euro= (87.34 * 1rupias)
+
+    //preguntamos la cantidad que quiere convertir
+     ESCRIBIR: "¿Cuántos euros quieres convertir?"
+     LEER: cantidad_euros
+
+      MIENTRAS: (cantidad_euros > 0) ENTONCES:
+            cantidad_total = (cantidad_euros * 87.34)
+         ESCRIBIR: "La conversion de" cantidad_euros "€" "equivalen a" cantidad_total "Rupias"
+              SINO ESCRIBIR: "La conversión debe ser superior a 0"
+              FIN SINO.
+      FIN MIENTRAS.
+FIN

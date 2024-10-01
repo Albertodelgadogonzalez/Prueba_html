@@ -1,0 +1,36 @@
+Ejercicio 2
+INICIO 
+    //definimos y declaramos las constantes y variables necesarias
+    VARIABLE: prueba_acceso, bachiller
+
+    //consultamos si el usuario dispone de titulo de bachiller
+    //y asociamos su respuesta a la variable correspondiente
+
+    ESCRIBIR: "¿Has conseguido titulo bachiller? Responde si o no"
+    LEER: bachiller
+
+        //se comprobará su repuesta haciendo uso de un condicional
+        SI (bachiller == "si") ENTONCES 
+                ESCRIBIR  "Puede realizar el Graado Superior"
+            
+            
+            //se consultara si tiene prueba de acceso
+            //y se asociara su respuesta a la variable correspondiente
+            
+            SINO ESCRIBIR "¿Tiene prueba de acceso? Responda usando si o no"
+            LEER: prueba_acceso
+                SI (prueba_acceso == "si") ENTONCES 
+                    ESCRIBIR "Puede realizar el Grado Superior"
+            
+        ESCRIBIR "Pasa al Grado Superior" 
+            
+            SI "si" ESCRIBIR "Pasa al Grado Superior"
+                SINO ESCRIBIR: "No puede realizar el Grado Superior"
+            FIN SI
+            FIN SI
+
+FIN
+
+
+
+  

@@ -1,0 +1,42 @@
+Ejercicio6
+//Un cocinero solicita que generemos un algoritmo que permita calcular el coste de una paella. 
+//sabiendo que la receta se indica que para una sola persona se necesitarán: 100gramos de arroz, 
+//50gramos de langostinos y 20gramos de pimientos.Para poder resolver el ejercicio será necesario preguntarle al cocinero
+//el número de comensales para los que preparará la paella, así como el coste del KG de cada uno de los ingredientes necesarios
+
+INICIO 
+
+VARIABLES: comensales, precioKG_arroz, precioKG_langostinos, precioKG_pimientos, 
+            cantidad_arroz, cantidad_langostinos, cantidad_pimientos, precio_arroz, precio_langostinos,
+             precio_pimientos, precio_paella    
+CONSTANTES: arroz_persona = 100, pimientos_personas = 50, langostino_persona = 20
+
+//solicitamos al usuario los datos necesarios para resolver el problema
+//y los asociamos a sus variables        
+        
+        ESCRIBIR: "¿Para cuantas personas es la paella?"
+        LEER: comensales
+        ESCRIBIR: "¿Cuánto cuesta el KG de arroz?"
+        LEER: precioKG_arroz
+        ESCRIBIR: "¿Cuánto cuesta el KG de langostinos?"
+        LEER: precioKG_langostinos
+        ESCRIBIR: "¿Cuánto cuesta el KG de pimientos?"
+        LEER: precioKG_pimientos
+
+        //se procede a la realizacion de los calculos necesarios para resollver el ejercicio
+
+        cantidad_arroz=(arroz_persona/ 1000) * comensales
+        cantidad_langostino=(langostino_persona/ 1000) * comensales
+        cantidad_arroz=(pimientos_persona/ 1000) * comensales
+
+        precio_arroz= cantidad_arroz * precioKG_arroz
+        precio_langostino=cantidad_langostino * precioKG_langostino
+        precio_pimientos=cantidad_pimientos *precioKG_pimientos
+
+        precio_paella = precio_arroz + precio_langostino + precio_pimientos
+
+        //se muestra el resultado obtenido
+        ESCRIBIR: "La paella tendrá un coste de:", precio_paella, "€"
+
+FIN
+        

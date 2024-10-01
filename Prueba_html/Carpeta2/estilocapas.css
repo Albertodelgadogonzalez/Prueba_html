@@ -1,0 +1,27 @@
+
+#capa1{
+    width: 200;
+    height: 100;
+    border-color: black;
+    border-style: 1px;
+    border: solid;
+    display: block;
+}
+#capa2{
+    width: 200;
+    height: 400;
+    border-color: black;
+    border-style: 1px;
+    border: solid;
+    display: block;
+}
+#capa3{
+    width: 200;
+    height: 50;
+    border-color: black;
+    border-style: 1px;
+    border: solid;
+    position: static;
+   float: right;
+}
+

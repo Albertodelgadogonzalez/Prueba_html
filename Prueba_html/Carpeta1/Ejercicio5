@@ -1,0 +1,21 @@
+Ejercicio5
+INICIO
+    //escribimos las variables y constantes
+    VARIABLES: numTabla, multiplicador, resultado
+
+    //se crea un bucle anidado (un bucle dentro de otro)
+    //que nos permita generar las tablas del 0 al 10
+    //el primer bucle permitira generar cada tabla de multiplicar 
+
+    PARA numTabla = 0 HASTA 10 INCREMENTO 1
+        ESCRIBIR:"Tabla del:", numTabla
+        
+        //el bucle interno que permitirá generar el contenido de la tabla. 
+            PARA multiplicador = 0 HASTA 10 INCREMENTO 1    
+                resultado = numTabla * multiplicador
+                ESCRIBIR numTabla, "x", multiplicador, "=" resultado
+            FIN PARA
+    FIN PARA
+
+    // finalizamos el programa
+FIN

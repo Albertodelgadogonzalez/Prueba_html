@@ -1,0 +1,45 @@
+Ejercicio4
+
+INICIO
+    //Definimos variables y constantes
+    VARIABLE: cantidad_asignaturas, nota_asignatura, asignaturas_aprobadas=0,
+                asignaturas_suspensas=0, nota_media, contador=1, suma_notas=0
+        
+        //solicitamos al usuario los datos necesarios para resolver el problema
+        //y lo asociamos a sus variables correspondientes
+
+        ESCRIBIR:"¿Cuántas asignaturas has cursado?"
+        LEER: cantidad_asignaturas
+
+        //se crea un bucle que vaya preguntando al usuario la nota que ha obtenido
+        //para cada una de las asignaturas cursadas
+
+        MIENTRAS(contador<= cantidad_asignaturas) HACER
+            //se solicita la nota obtenida y se asocia a su variable correspondientes
+            
+            ESCRIBIR:"Indique la nota obtenida para la asignatura", contador
+            LEER: nota_asignatura
+
+            //comprobamos si la asignatura se ha suspendido o aprobado 
+            SI(nota_asignatura >=5) ENTONCES
+                asignaturas_aprobadas= asignaturas_aprobadas +1
+            SINO
+                asignaturas_suspensas= +1
+            FIN SI
+
+            suma_notas=suma_notas + nota_asignatura
+            contador=contador +1
+        FIN MIENTRAS
+
+        //se calcula la nota media obtenida
+        nota_media= suma_notas/ cantidad_asignaturas
+
+        //se muestra el resultado obtenido
+        ESCRIBIR:"La nota media del alumno es:", nota_media
+        ESCRIBIR:"Total de asignaturas aprobadas:", asignaturas_aprobadas
+        ESCRIBIR:"Total de asignaturas suspendidas:", asignaturas_suspensas
+
+FIN
+
+
+FIN
